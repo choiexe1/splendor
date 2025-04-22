@@ -1,0 +1,12 @@
+name: splendor
+description: A sample command-line application.
+version: 1.0.0
+# repository: https://github.com/my_org/my_repo
+
+scripts:
+  pub:dev: cd ./server && flutter pub get && cd ../client && flutter pub get
+  server:run: dart run ./server/bin/server.dart
+  client:run: cd ./client && flutter run ./client/lib/main.dart
+
+environment:
+  sdk: ^3.7.2
